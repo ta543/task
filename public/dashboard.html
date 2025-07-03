@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <header class="header">
+      <div class="avatar-container">
+        <img id="avatar" class="avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP4/AAAABQBAzEJ+wAAAABJRU5ErkJggg==" alt="Avatar" />
+        <input id="avatarInput" type="file" accept="image/*" hidden />
+      </div>
+      <h1>User Name</h1>
+    </header>
+    <nav class="sidebar">
+      <ul>
+        <li data-section="profile" class="active">Profile</li>
+        <li data-section="billing">Billing</li>
+        <li data-section="notifications">Notifications</li>
+        <li data-section="security">Security</li>
+      </ul>
+    </nav>
+    <main class="content">
+      <section id="profile" class="section active">
+        <h2>Profile</h2>
+        <p>Update your personal information.</p>
+      </section>
+      <section id="billing" class="section">
+        <h2>Billing</h2>
+        <p>Manage your billing details.</p>
+      </section>
+      <section id="notifications" class="section">
+        <h2>Notifications</h2>
+        <p>Configure notification preferences.</p>
+      </section>
+      <section id="security" class="section">
+        <h2>Security</h2>
+        <p>Update your password and 2FA.</p>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
